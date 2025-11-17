@@ -1,0 +1,20 @@
+trace_dir: "/home/sheng/code/sparse-attention-kvcache/traces/moba-512-3/beyond-4096"
+
+hidden_size: 1024
+num_layers: 28
+num_heads: 16
+kv_group_size: 2
+block_size: 512
+context_length: 4096
+top_k: 3
+
+page_size: 32
+store_all_kvheads: true
+dtype_bytes: 2
+
+cache_size: 8
+eviction_algorithm: "lru"
+
+batch_size: 1
+continuous_batching: false
+
