@@ -43,6 +43,7 @@ class SimConfig:
     # will use this technique to better gpu utilization, but we may never
     # have enough time to implement it
     continuous_batching: bool = False
+    verbose: bool = False
 
     def __post_init__(self):
         if self.batch_size != 1:

@@ -109,6 +109,8 @@ class MobaTraceReader(ReaderProtocol):
                     page_id = start_token_pos // self.config.page_size
                     for _ in range(num_pages):
                         page = PagedKVCache(cur_req, page_id, cur_layer)
+                        if self.verbose:
+                            logger.info(f"Read page {page}")
                         yield page
                         num_reqs += 1
                         page_id += 1

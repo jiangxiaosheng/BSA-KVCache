@@ -5,6 +5,7 @@ from math import ceil, log2
 # In this simulation we do not consider cross-request KV cache reuse
 # so each KV cache makes sense only for the request it belongs to.
 
+
 # This is the vanilla paged attention KV cache
 # It has shape [page_size, 2, num_kvheads, hidden_size] and is per layer
 # Note that it contains all KV heads in that layer
@@ -17,7 +18,13 @@ class PagedKVCache:
     @classmethod
     def bytes(self) -> int:
         config = sim_config()
-        return config.page_size * 2 * config.num_kvheads * config.hidden_size * config.dtype_bytes
+        return (
+            config.page_size
+            * 2
+            * config.num_kvheads
+            * config.hidden_size
+            * config.dtype_bytes
+        )
 
     def __repr__(self):
         return f"PagedKVCache(req_id={self.req_id}, page_id={self.page_id}, layer_id={self.layer_id}, obj_id={self.get_obj_id()})"
@@ -25,7 +32,9 @@ class PagedKVCache:
     def get_obj_id(self) -> int:
         config = sim_config()
         bits_page = (
-            ceil(log2(config.num_blocks_per_head)) if config.num_blocks_per_head > 1 else 1
+            ceil(log2(config.context_length // config.page_size))
+            if config.context_length // config.page_size > 1
+            else 1
         )
         bits_layer = ceil(log2(config.num_layers)) if config.num_layers > 1 else 1
         bits_seq = ceil(log2(config.batch_size)) if config.batch_size > 1 else 1
@@ -44,6 +53,7 @@ class PagedKVCache:
             | (self.layer_id << shift_layer)
             | (self.page_id << shift_page)
         )
+
 
 class BsaKVCache:
     def __init__(self, req_id: int, layer_id: int):
