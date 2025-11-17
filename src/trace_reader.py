@@ -8,24 +8,20 @@ from kvcache import PagedKVCache, BsaKVCache
 from typing import Iterator
 from collections import defaultdict
 from tqdm import tqdm
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class MobaTraceReader(ReaderProtocol):
     c_reader: bool = False
 
-    def __init__(self):
+    def __init__(self, verbose: bool = False):
         self.config = sim_config()
-        self.cur_batch = -1
-        self.max_output_len = -1
-        self.cur_iter = 0
-        self.num_reqs = 0
-        self.cur_req = 0
-        self.cur_layer = 0
-        self.cur_head = 0
-        self.reached_end = False
+        self.verbose = verbose
         self.trace_files = defaultdict(lambda: defaultdict(dict))
         self.traces = defaultdict(dict)
-        self.kvcache_to_read = []
+        self._request_generator = None
 
         self._validate_traces()
         self._preload_traces()
@@ -77,39 +73,30 @@ class MobaTraceReader(ReaderProtocol):
                 block_trace = np.load(self.trace_files[trace_id][i]["blocks"])
                 score_trace = np.load(self.trace_files[trace_id][i]["scores"])
                 self.traces[trace_id][i] = (block_trace, score_trace)
-            self.num_reqs += (
-                self.traces[trace_id][0][0].shape[2]
-                * self.config.top_k
-                * self.config.block_size
-                // self.config.page_size
-                * self.config.num_heads
-                * self.config.num_layers
-            )
 
-    def read_one_req(self) -> Request:
-        if self.reached_end:
-            raise StopIteration("No more requests to read")
+    def _generate_all_requests(self):
+        cur_req = 0
+        cur_layer = 0
+        cur_iter = 0
+        reached_end = False
+        num_reqs = 0
+        while not reached_end:
+            if self.config.store_all_kvheads:
+                # case for standard paged attention
+                block_ids = self.traces[cur_req][cur_layer][0][:, :, cur_iter]
+                num_iters = self.traces[cur_req][0][0].shape[2]
 
-        # Note: Here we assume we follow a sequential order of accessing each head and paged/bsa kv caches
-        # within that head, despite the fact that they are read in parallel from CPU DRAM.
-
-        if self.config.store_all_kvheads:
-            # case for standard paged attention
-            if len(self.kvcache_to_read) == 0:
-                block_ids = self.traces[self.cur_req][self.cur_layer][0][
-                    :, self.cur_head, self.cur_iter
-                ]
-
-                # print(f"shape of block_ids: {block_ids.shape}")
-                # print(block_ids)
-                block_ids = block_ids.tolist()
+                block_ids = block_ids.flatten().tolist()
                 last_block_id = (
                     self.config.context_length - 1
                 ) // self.config.block_size
                 block_ids.append(last_block_id)
-                # print(block_ids)
+                block_ids = set(block_ids)
 
-                self.kvcache_to_read = []
+                if self.verbose:
+                    logger.info(f"Processing sequence {cur_req}, layer {cur_layer}, iter {cur_iter}, block ids: {block_ids}")
+
+                # yield all pages for the current layer
                 for block_id in block_ids:
                     start_token_pos = block_id * self.config.block_size
                     end_token_pos = start_token_pos + self.config.block_size
@@ -119,40 +106,57 @@ class MobaTraceReader(ReaderProtocol):
                     if (end_token_pos - start_token_pos) % self.config.page_size != 0:
                         num_pages += 1
 
-                    # print("start token pos: ", start_token_pos)
                     page_id = start_token_pos // self.config.page_size
-                    # print("page id: ", page_id)
                     for _ in range(num_pages):
-                        page = PagedKVCache(self.cur_req, page_id, self.cur_layer)
-                        self.kvcache_to_read.append(page)
+                        page = PagedKVCache(cur_req, page_id, cur_layer)
+                        yield page
+                        num_reqs += 1
                         page_id += 1
-                self.cur_head += 1
-                if self.cur_head == self.config.num_heads:
-                    self.cur_head = 0
-                    self.cur_layer += 1
-                    if self.cur_layer == self.config.num_layers:
-                        self.cur_layer = 0
-                        self.cur_req += 1
-                        if self.cur_req == len(self.trace_files):
-                            self.reached_end = True
 
-            kvcache: PagedKVCache = self.kvcache_to_read.pop(0)
-            print(f'Reading paged kvcache: {kvcache}')
+                # Update counters after processing this layer
+                cur_layer += 1
+                if cur_layer == self.config.num_layers:
+                    cur_layer = 0
+                    cur_iter += 1
+                    if cur_iter == num_iters:
+                        cur_req += 1
+                        if self.verbose:
+                            logger.info(f"Finished reading {cur_req} sequences, total {num_reqs} requests")
+                        cur_iter = 0
+                        if cur_req == len(self.trace_files):
+                            reached_end = True
+            else:
+                # case for block sparse attention
+                pass
+
+    def read_one_req(self) -> Request:
+        if self._request_generator is None:
+            self._request_generator = self._generate_all_requests()
+
+        try:
+            kvcache: PagedKVCache = next(self._request_generator)
             req = Request(obj_size=PagedKVCache.bytes(), obj_id=kvcache.get_obj_id())
             return req
-
-        else:
-            # case for block sparse attention
-            pass
+        except StopIteration:
+            raise StopIteration("No more requests to read")
 
     def skip_n_req(self, n: int) -> int:
-        raise NotImplementedError("Why are you calling skip_n_req()?")
+        if self._request_generator is None:
+            self._request_generator = self._generate_all_requests()
+        try:
+            for _ in range(n):
+                next(self._request_generator)
+            return n
+        except StopIteration:
+            return n
 
     def get_num_of_req(self) -> int:
-        return self.num_reqs
+        raise NotImplementedError(
+            "Why are you calling get_num_of_req()? I don't know that either"
+        )
 
     def reset(self) -> None:
-        raise NotImplementedError("Why are you calling reset()?")
+        self._request_generator = None
 
     def close(self) -> None:
         pass
@@ -170,4 +174,6 @@ class MobaTraceReader(ReaderProtocol):
         return self.read_one_req()
 
     def __len__(self) -> int:
-        return self.num_reqs
+        raise NotImplementedError(
+            "Why are you calling __len__()? I don't know that either"
+        )

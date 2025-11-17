@@ -7,6 +7,7 @@ from math import ceil, log2
 
 # This is the vanilla paged attention KV cache
 # It has shape [page_size, 2, num_kvheads, hidden_size] and is per layer
+# Note that it contains all KV heads in that layer
 class PagedKVCache:
     def __init__(self, req_id: int, page_id: int, layer_id: int):
         self.req_id = req_id

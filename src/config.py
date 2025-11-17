@@ -30,7 +30,7 @@ class SimConfig:
     dtype_bytes: int = 2
 
     # Cache parameters
-    cache_size: int = 0  # in GB
+    cache_size: float = 0  # in GB
     eviction_algorithm: str = "lru"
 
     # Misc parameters

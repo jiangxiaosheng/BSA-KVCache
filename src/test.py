@@ -11,7 +11,8 @@ if __name__ == "__main__":
     config.from_yaml("config.yaml")
     print(config)
     reader = MobaTraceReader()
-    print(f'Number of requests: {reader.get_num_of_req()}')
+    # print(reader.read_one_req())
+    # print(f'Number of requests: {reader.get_num_of_req()}')
     for req in reader:
-        # print(f'Request(obj_size={req.obj_size}, obj_id={req.obj_id})')
+        print(f'Request(obj_size={req.obj_size}, obj_id={req.obj_id})')
         pass
