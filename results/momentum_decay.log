@@ -1,0 +1,304 @@
+[20:40:41] INFO simulator.py:87: Simulation config: SimConfig(trace_dir='traces/moba-512-3/beyond-4096', hidden_size=1024, num_layers=28, num_heads=16, kv_group_size=2, block_size=512, context_length=4096, top_k=3, page_size=32, store_all_kvheads=True, dtype_bytes=2, cache_size=3, eviction_algorithm='momentum_decay', batch_size=1, continuous_batching=False, verbose=False)
+Simulating traces:   0%|          | 0/100 [00:00<?, ?it/s][20:40:41] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:40:43] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:   1%|          | 1/100 [00:01<02:24,  1.46s/it][20:40:43] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:40:46] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:   2%|▏         | 2/100 [00:04<03:54,  2.40s/it][20:40:46] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:40:49] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:   3%|▎         | 3/100 [00:07<04:28,  2.77s/it][20:40:49] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:40:52] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:   4%|▍         | 4/100 [00:10<04:33,  2.85s/it][20:40:52] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:40:52] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:   5%|▌         | 5/100 [00:11<03:10,  2.00s/it][20:40:52] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:40:55] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:   6%|▌         | 6/100 [00:14<03:40,  2.35s/it][20:40:56] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:40:59] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:   7%|▋         | 7/100 [00:17<03:59,  2.58s/it][20:40:59] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:02] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:   8%|▊         | 8/100 [00:20<04:13,  2.75s/it][20:41:02] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:05] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:   9%|▉         | 9/100 [00:23<04:20,  2.87s/it][20:41:05] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:08] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  10%|█         | 10/100 [00:26<04:21,  2.91s/it][20:41:08] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:11] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  11%|█         | 11/100 [00:29<04:22,  2.94s/it][20:41:11] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:12] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  12%|█▏        | 12/100 [00:30<03:20,  2.28s/it][20:41:12] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:15] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  13%|█▎        | 13/100 [00:33<03:36,  2.48s/it][20:41:15] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:18] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  14%|█▍        | 14/100 [00:36<03:51,  2.69s/it][20:41:18] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:21] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  15%|█▌        | 15/100 [00:39<03:59,  2.82s/it][20:41:21] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:24] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  16%|█▌        | 16/100 [00:42<04:02,  2.89s/it][20:41:24] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:27] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  17%|█▋        | 17/100 [00:45<04:04,  2.95s/it][20:41:27] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:30] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  18%|█▊        | 18/100 [00:48<04:05,  3.00s/it][20:41:30] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:33] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  19%|█▉        | 19/100 [00:51<04:07,  3.05s/it][20:41:33] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:36] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  20%|██        | 20/100 [00:55<04:04,  3.05s/it][20:41:36] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:39] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  21%|██        | 21/100 [00:57<03:58,  3.01s/it][20:41:39] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:42] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  22%|██▏       | 22/100 [01:01<03:59,  3.07s/it][20:41:42] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:45] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  23%|██▎       | 23/100 [01:04<03:56,  3.07s/it][20:41:46] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:49] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  24%|██▍       | 24/100 [01:07<03:54,  3.08s/it][20:41:49] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:52] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  25%|██▌       | 25/100 [01:10<03:49,  3.06s/it][20:41:52] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:55] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  26%|██▌       | 26/100 [01:13<03:45,  3.04s/it][20:41:55] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:41:58] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  27%|██▋       | 27/100 [01:16<03:43,  3.06s/it][20:41:58] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:01] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  28%|██▊       | 28/100 [01:19<03:41,  3.08s/it][20:42:01] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:04] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  29%|██▉       | 29/100 [01:22<03:39,  3.08s/it][20:42:04] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:07] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  30%|███       | 30/100 [01:25<03:37,  3.11s/it][20:42:07] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:10] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  31%|███       | 31/100 [01:28<03:30,  3.06s/it][20:42:10] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:13] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  32%|███▏      | 32/100 [01:31<03:26,  3.04s/it][20:42:13] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:14] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  33%|███▎      | 33/100 [01:32<02:43,  2.44s/it][20:42:14] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:17] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  34%|███▍      | 34/100 [01:35<02:53,  2.62s/it][20:42:17] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:20] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  35%|███▌      | 35/100 [01:38<03:00,  2.77s/it][20:42:20] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:23] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  36%|███▌      | 36/100 [01:42<03:03,  2.87s/it][20:42:23] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:26] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  37%|███▋      | 37/100 [01:45<03:03,  2.91s/it][20:42:26] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:29] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  38%|███▊      | 38/100 [01:48<03:03,  2.96s/it][20:42:29] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:33] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  39%|███▉      | 39/100 [01:51<03:02,  3.00s/it][20:42:33] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:36] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  40%|████      | 40/100 [01:54<03:04,  3.07s/it][20:42:36] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:39] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  41%|████      | 41/100 [01:57<03:00,  3.05s/it][20:42:39] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:42] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  42%|████▏     | 42/100 [02:00<02:57,  3.06s/it][20:42:42] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:45] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  43%|████▎     | 43/100 [02:03<02:54,  3.06s/it][20:42:45] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:47] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  44%|████▍     | 44/100 [02:05<02:28,  2.65s/it][20:42:47] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:50] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  45%|████▌     | 45/100 [02:08<02:31,  2.75s/it][20:42:50] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:51] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  46%|████▌     | 46/100 [02:09<02:01,  2.25s/it][20:42:51] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:54] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  47%|████▋     | 47/100 [02:12<02:11,  2.48s/it][20:42:54] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:42:57] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  48%|████▊     | 48/100 [02:15<02:19,  2.68s/it][20:42:57] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:00] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  49%|████▉     | 49/100 [02:18<02:22,  2.79s/it][20:43:00] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:03] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  50%|█████     | 50/100 [02:21<02:23,  2.88s/it][20:43:03] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:03] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  51%|█████     | 51/100 [02:21<01:41,  2.07s/it][20:43:03] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:06] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  52%|█████▏    | 52/100 [02:24<01:52,  2.35s/it][20:43:06] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:09] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  53%|█████▎    | 53/100 [02:27<02:01,  2.58s/it][20:43:09] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:12] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  54%|█████▍    | 54/100 [02:30<02:04,  2.70s/it][20:43:12] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:15] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  55%|█████▌    | 55/100 [02:34<02:06,  2.82s/it][20:43:15] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:18] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  56%|█████▌    | 56/100 [02:37<02:07,  2.90s/it][20:43:18] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:22] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  57%|█████▋    | 57/100 [02:40<02:08,  2.98s/it][20:43:22] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:25] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  58%|█████▊    | 58/100 [02:43<02:06,  3.01s/it][20:43:25] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:28] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  59%|█████▉    | 59/100 [02:46<02:02,  2.98s/it][20:43:28] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:29] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  60%|██████    | 60/100 [02:47<01:37,  2.44s/it][20:43:29] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:32] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  61%|██████    | 61/100 [02:50<01:41,  2.60s/it][20:43:32] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:35] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  62%|██████▏   | 62/100 [02:53<01:43,  2.73s/it][20:43:35] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:38] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  63%|██████▎   | 63/100 [02:56<01:44,  2.82s/it][20:43:38] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:41] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  64%|██████▍   | 64/100 [02:59<01:44,  2.89s/it][20:43:41] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:44] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  65%|██████▌   | 65/100 [03:02<01:42,  2.94s/it][20:43:44] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:47] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  66%|██████▌   | 66/100 [03:05<01:41,  3.00s/it][20:43:47] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:50] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  67%|██████▋   | 67/100 [03:08<01:38,  3.00s/it][20:43:50] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:53] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  68%|██████▊   | 68/100 [03:11<01:37,  3.03s/it][20:43:53] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:56] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  69%|██████▉   | 69/100 [03:14<01:34,  3.04s/it][20:43:56] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:43:59] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  70%|███████   | 70/100 [03:17<01:31,  3.05s/it][20:43:59] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:01] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  71%|███████   | 71/100 [03:19<01:13,  2.52s/it][20:44:01] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:04] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  72%|███████▏  | 72/100 [03:22<01:14,  2.65s/it][20:44:04] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:04] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  73%|███████▎  | 73/100 [03:22<00:52,  1.94s/it][20:44:04] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:07] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  74%|███████▍  | 74/100 [03:25<00:58,  2.24s/it][20:44:07] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:10] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  75%|███████▌  | 75/100 [03:28<01:02,  2.49s/it][20:44:10] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:12] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  76%|███████▌  | 76/100 [03:30<00:54,  2.29s/it][20:44:12] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:15] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  77%|███████▋  | 77/100 [03:33<00:57,  2.50s/it][20:44:15] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:18] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  78%|███████▊  | 78/100 [03:36<00:58,  2.68s/it][20:44:18] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:21] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  79%|███████▉  | 79/100 [03:39<00:57,  2.75s/it][20:44:21] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:24] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  80%|████████  | 80/100 [03:42<00:57,  2.87s/it][20:44:24] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:27] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  81%|████████  | 81/100 [03:45<00:55,  2.91s/it][20:44:27] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:30] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  82%|████████▏ | 82/100 [03:48<00:52,  2.94s/it][20:44:30] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:33] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  83%|████████▎ | 83/100 [03:51<00:50,  2.94s/it][20:44:33] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:36] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  84%|████████▍ | 84/100 [03:54<00:47,  2.96s/it][20:44:36] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:39] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  85%|████████▌ | 85/100 [03:57<00:44,  2.97s/it][20:44:39] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:42] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  86%|████████▌ | 86/100 [04:00<00:41,  2.98s/it][20:44:42] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:45] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  87%|████████▋ | 87/100 [04:03<00:39,  3.03s/it][20:44:45] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:48] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  88%|████████▊ | 88/100 [04:06<00:36,  3.03s/it][20:44:48] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:51] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  89%|████████▉ | 89/100 [04:09<00:33,  3.02s/it][20:44:51] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:54] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  90%|█████████ | 90/100 [04:12<00:30,  3.05s/it][20:44:54] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:44:57] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  91%|█████████ | 91/100 [04:15<00:27,  3.06s/it][20:44:57] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:45:00] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  92%|█████████▏| 92/100 [04:18<00:24,  3.01s/it][20:45:00] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:45:02] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  93%|█████████▎| 93/100 [04:20<00:18,  2.63s/it][20:45:02] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:45:05] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  94%|█████████▍| 94/100 [04:23<00:16,  2.74s/it][20:45:05] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:45:08] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  95%|█████████▌| 95/100 [04:26<00:14,  2.83s/it][20:45:08] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:45:11] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  96%|█████████▌| 96/100 [04:29<00:11,  2.90s/it][20:45:11] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:45:14] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  97%|█████████▋| 97/100 [04:32<00:08,  2.95s/it][20:45:14] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:45:17] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  98%|█████████▊| 98/100 [04:35<00:05,  2.98s/it][20:45:17] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:45:20] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces:  99%|█████████▉| 99/100 [04:38<00:03,  3.00s/it][20:45:20] INFO simulator.py:55: Using cache eviction algorithm: momentum_decay (beta=0.9)
+[20:45:23] INFO simulator.py:107: Cache occupied 3221225472 bytes
+Simulating traces: 100%|██████████| 100/100 [04:41<00:00,  3.02s/it]Simulating traces: 100%|██████████| 100/100 [04:41<00:00,  2.82s/it]
+[20:45:23] INFO simulator.py:109: Average request miss ratio: 0.12801407226275557
+[20:45:23] INFO simulator.py:110: Average bytes miss ratio: 0.12801407226275557
+Processing trace traces/moba-512-3/beyond-4096/trace0000
+Processing trace traces/moba-512-3/beyond-4096/trace0001
+Processing trace traces/moba-512-3/beyond-4096/trace0002
+Processing trace traces/moba-512-3/beyond-4096/trace0003
+Processing trace traces/moba-512-3/beyond-4096/trace0004
+Processing trace traces/moba-512-3/beyond-4096/trace0005
+Processing trace traces/moba-512-3/beyond-4096/trace0006
+Processing trace traces/moba-512-3/beyond-4096/trace0007
+Processing trace traces/moba-512-3/beyond-4096/trace0008
+Processing trace traces/moba-512-3/beyond-4096/trace0009
+Processing trace traces/moba-512-3/beyond-4096/trace0010
+Processing trace traces/moba-512-3/beyond-4096/trace0011
+Processing trace traces/moba-512-3/beyond-4096/trace0012
+Processing trace traces/moba-512-3/beyond-4096/trace0013
+Processing trace traces/moba-512-3/beyond-4096/trace0014
+Processing trace traces/moba-512-3/beyond-4096/trace0015
+Processing trace traces/moba-512-3/beyond-4096/trace0016
+Processing trace traces/moba-512-3/beyond-4096/trace0017
+Processing trace traces/moba-512-3/beyond-4096/trace0018
+Processing trace traces/moba-512-3/beyond-4096/trace0019
+Processing trace traces/moba-512-3/beyond-4096/trace0020
+Processing trace traces/moba-512-3/beyond-4096/trace0021
+Processing trace traces/moba-512-3/beyond-4096/trace0022
+Processing trace traces/moba-512-3/beyond-4096/trace0023
+Processing trace traces/moba-512-3/beyond-4096/trace0024
+Processing trace traces/moba-512-3/beyond-4096/trace0025
+Processing trace traces/moba-512-3/beyond-4096/trace0026
+Processing trace traces/moba-512-3/beyond-4096/trace0027
+Processing trace traces/moba-512-3/beyond-4096/trace0028
+Processing trace traces/moba-512-3/beyond-4096/trace0029
+Processing trace traces/moba-512-3/beyond-4096/trace0030
+Processing trace traces/moba-512-3/beyond-4096/trace0031
+Processing trace traces/moba-512-3/beyond-4096/trace0032
+Processing trace traces/moba-512-3/beyond-4096/trace0033
+Processing trace traces/moba-512-3/beyond-4096/trace0034
+Processing trace traces/moba-512-3/beyond-4096/trace0035
+Processing trace traces/moba-512-3/beyond-4096/trace0036
+Processing trace traces/moba-512-3/beyond-4096/trace0037
+Processing trace traces/moba-512-3/beyond-4096/trace0038
+Processing trace traces/moba-512-3/beyond-4096/trace0039
+Processing trace traces/moba-512-3/beyond-4096/trace0040
+Processing trace traces/moba-512-3/beyond-4096/trace0041
+Processing trace traces/moba-512-3/beyond-4096/trace0042
+Processing trace traces/moba-512-3/beyond-4096/trace0043
+Processing trace traces/moba-512-3/beyond-4096/trace0044
+Processing trace traces/moba-512-3/beyond-4096/trace0045
+Processing trace traces/moba-512-3/beyond-4096/trace0046
+Processing trace traces/moba-512-3/beyond-4096/trace0047
+Processing trace traces/moba-512-3/beyond-4096/trace0048
+Processing trace traces/moba-512-3/beyond-4096/trace0049
+Processing trace traces/moba-512-3/beyond-4096/trace0050
+Processing trace traces/moba-512-3/beyond-4096/trace0051
+Processing trace traces/moba-512-3/beyond-4096/trace0052
+Processing trace traces/moba-512-3/beyond-4096/trace0053
+Processing trace traces/moba-512-3/beyond-4096/trace0054
+Processing trace traces/moba-512-3/beyond-4096/trace0055
+Processing trace traces/moba-512-3/beyond-4096/trace0056
+Processing trace traces/moba-512-3/beyond-4096/trace0057
+Processing trace traces/moba-512-3/beyond-4096/trace0058
+Processing trace traces/moba-512-3/beyond-4096/trace0059
+Processing trace traces/moba-512-3/beyond-4096/trace0060
+Processing trace traces/moba-512-3/beyond-4096/trace0061
+Processing trace traces/moba-512-3/beyond-4096/trace0062
+Processing trace traces/moba-512-3/beyond-4096/trace0063
+Processing trace traces/moba-512-3/beyond-4096/trace0064
+Processing trace traces/moba-512-3/beyond-4096/trace0065
+Processing trace traces/moba-512-3/beyond-4096/trace0066
+Processing trace traces/moba-512-3/beyond-4096/trace0067
+Processing trace traces/moba-512-3/beyond-4096/trace0068
+Processing trace traces/moba-512-3/beyond-4096/trace0069
+Processing trace traces/moba-512-3/beyond-4096/trace0070
+Processing trace traces/moba-512-3/beyond-4096/trace0071
+Processing trace traces/moba-512-3/beyond-4096/trace0072
+Processing trace traces/moba-512-3/beyond-4096/trace0073
+Processing trace traces/moba-512-3/beyond-4096/trace0074
+Processing trace traces/moba-512-3/beyond-4096/trace0075
+Processing trace traces/moba-512-3/beyond-4096/trace0076
+Processing trace traces/moba-512-3/beyond-4096/trace0077
+Processing trace traces/moba-512-3/beyond-4096/trace0078
+Processing trace traces/moba-512-3/beyond-4096/trace0079
+Processing trace traces/moba-512-3/beyond-4096/trace0080
+Processing trace traces/moba-512-3/beyond-4096/trace0081
+Processing trace traces/moba-512-3/beyond-4096/trace0082
+Processing trace traces/moba-512-3/beyond-4096/trace0083
+Processing trace traces/moba-512-3/beyond-4096/trace0084
+Processing trace traces/moba-512-3/beyond-4096/trace0085
+Processing trace traces/moba-512-3/beyond-4096/trace0086
+Processing trace traces/moba-512-3/beyond-4096/trace0087
+Processing trace traces/moba-512-3/beyond-4096/trace0088
+Processing trace traces/moba-512-3/beyond-4096/trace0089
+Processing trace traces/moba-512-3/beyond-4096/trace0090
+Processing trace traces/moba-512-3/beyond-4096/trace0091
+Processing trace traces/moba-512-3/beyond-4096/trace0092
+Processing trace traces/moba-512-3/beyond-4096/trace0093
+Processing trace traces/moba-512-3/beyond-4096/trace0094
+Processing trace traces/moba-512-3/beyond-4096/trace0095
+Processing trace traces/moba-512-3/beyond-4096/trace0096
+Processing trace traces/moba-512-3/beyond-4096/trace0097
+Processing trace traces/moba-512-3/beyond-4096/trace0098
+Processing trace traces/moba-512-3/beyond-4096/trace0099
