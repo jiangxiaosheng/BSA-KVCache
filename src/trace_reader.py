@@ -81,6 +81,12 @@ class MobaTraceReader(ReaderProtocol):
     def _get_last_block_id(self) -> int:
         return (self.config.context_length - 1) // self.config.block_size
 
+    def _softmax(self, x: np.ndarray, axis: int = 0) -> np.ndarray:
+        """Compute softmax along the specified axis."""
+        x_max = np.max(x, axis=axis, keepdims=True)
+        exp_x = np.exp(x - x_max)
+        return exp_x / np.sum(exp_x, axis=axis, keepdims=True)
+
     def _generate_paged_kvcache_requests(self):
         num_reqs = 0
 
@@ -148,6 +154,104 @@ class MobaTraceReader(ReaderProtocol):
             yield from self._generate_paged_kvcache_requests()
         else:
             yield from self._generate_bsa_kvcache_requests()
+
+    def _generate_paged_kvcache_requests_with_scores(self):
+        """Generate paged KV cache requests with normalized softmax scores."""
+        num_reqs = 0
+        num_iters = self.traces[0][0].shape[2]
+
+        for cur_iter in range(num_iters):
+            for cur_layer in range(self.config.num_layers):
+                block_ids = self.traces[cur_layer][0][:, :, cur_iter]
+                raw_scores = self.traces[cur_layer][1][:, :, cur_iter]  # (num_blocks, num_heads)
+                
+                # Apply softmax to normalize scores per head
+                softmax_scores = self._softmax(raw_scores, axis=0)  # (num_blocks, num_heads)
+                
+                # Collect unique blocks and their max scores across heads
+                block_score_map = {}
+                for head_idx in range(block_ids.shape[1]):
+                    for top_idx in range(block_ids.shape[0]):
+                        bid = int(block_ids[top_idx, head_idx])
+                        score = float(softmax_scores[bid, head_idx])
+                        if bid not in block_score_map:
+                            block_score_map[bid] = score
+                        else:
+                            block_score_map[bid] = max(block_score_map[bid], score)
+                
+                # Add last block with a high score (always selected)
+                last_block = self._get_last_block_id()
+                block_score_map[last_block] = block_score_map.get(last_block, 1.0)
+                
+                # Yield all pages for each block
+                for block_id, block_score in block_score_map.items():
+                    start_token_pos = block_id * self.config.block_size
+                    end_token_pos = start_token_pos + self.config.block_size
+                    num_pages = (end_token_pos - start_token_pos) // self.config.page_size
+                    if (end_token_pos - start_token_pos) % self.config.page_size != 0:
+                        num_pages += 1
+
+                    page_id = start_token_pos // self.config.page_size
+                    # Distribute score evenly across pages in this block
+                    page_score = block_score / num_pages
+                    for _ in range(num_pages):
+                        page = PagedKVCache(self.seq_id, page_id, cur_layer)
+                        if self.verbose:
+                            logger.info(f"Read request id: {num_reqs}, page: {page}, score: {page_score}")
+                        yield (page.get_obj_id(), PagedKVCache.bytes(), page_score)
+                        num_reqs += 1
+                        page_id += 1
+
+    def _generate_bsa_kvcache_requests_with_scores(self):
+        """Generate BSA KV cache requests with normalized softmax scores."""
+        num_reqs = 0
+        num_iters = self.traces[0][0].shape[2]
+
+        for cur_iter in range(num_iters):
+            for cur_layer in range(self.config.num_layers):
+                block_ids = self.traces[cur_layer][0][:, :, cur_iter]
+                raw_scores = self.traces[cur_layer][1][:, :, cur_iter]  # (num_blocks, num_heads)
+                
+                # Apply softmax to normalize scores per head
+                softmax_scores = self._softmax(raw_scores, axis=0)  # (num_blocks, num_heads)
+
+                for kvhead_id in range(self.config.num_heads // self.config.kv_group_size):
+                    start_col = kvhead_id * self.config.kv_group_size
+                    end_col = (kvhead_id + 1) * self.config.kv_group_size
+                    cur_kvhead_block_ids = block_ids[:, start_col:end_col]
+                    cur_kvhead_scores = softmax_scores[:, start_col:end_col]
+
+                    # Collect unique blocks and their max scores for this kv head
+                    block_score_map = {}
+                    for head_offset in range(cur_kvhead_block_ids.shape[1]):
+                        for top_idx in range(cur_kvhead_block_ids.shape[0]):
+                            bid = int(cur_kvhead_block_ids[top_idx, head_offset])
+                            score = float(cur_kvhead_scores[bid, head_offset])
+                            if bid not in block_score_map:
+                                block_score_map[bid] = score
+                            else:
+                                block_score_map[bid] = max(block_score_map[bid], score)
+                    
+                    # Add last block with high score
+                    last_block = self._get_last_block_id()
+                    block_score_map[last_block] = block_score_map.get(last_block, 1.0)
+
+                    for block_id, score in block_score_map.items():
+                        block = BsaKVCache(self.seq_id, block_id, cur_layer, kvhead_id)
+                        if self.verbose:
+                            logger.info(f"Read request id: {num_reqs}, block: {block}, score: {score}")
+                        yield (block.get_obj_id(), BsaKVCache.bytes(), score)
+                        num_reqs += 1
+
+    def generate_requests_with_scores(self):
+        """
+        Generator that yields (obj_id, obj_size, score) tuples.
+        Used by MomentumDecayCache for score-aware eviction.
+        """
+        if self.config.store_all_kvheads:
+            yield from self._generate_paged_kvcache_requests_with_scores()
+        else:
+            yield from self._generate_bsa_kvcache_requests_with_scores()
 
     def read_one_req(self) -> Request:
         if self._request_generator is None:
