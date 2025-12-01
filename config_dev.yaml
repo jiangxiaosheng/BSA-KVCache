@@ -1,0 +1,16 @@
+batch_size: 1
+block_size: 512
+cache_size: 3
+context_length: 4096
+continuous_batching: false
+dtype_bytes: 2
+eviction_algorithm: momentum_decay
+hidden_size: 1024
+kv_group_size: 2
+num_heads: 16
+num_layers: 28
+page_size: 32
+store_all_kvheads: true
+top_k: 3
+trace_dir: /home/yutarkk/BSA-KVCache/moba-512-3/beyond-4096
+verbose: false
