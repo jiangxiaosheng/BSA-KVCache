@@ -18,4 +18,3 @@ verbose: false
 
 batch_size: 1
 continuous_batching: false
-
