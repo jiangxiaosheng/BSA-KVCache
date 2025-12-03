@@ -1,4 +1,5 @@
 import os
+import sys
 
 os.environ.setdefault("TQDM_MININTERVAL", "5.0")
 
@@ -40,6 +41,7 @@ def setup_logging():
         level=logging.INFO,
         format="[%(asctime)s] %(levelname)s %(filename)s:%(lineno)d: %(message)s",
         datefmt="%H:%M:%S",
+        handlers=[logging.StreamHandler(sys.stdout)],
     )
 
 
