@@ -6,15 +6,11 @@ from momentum_cache import MomentumDecayCache
 import logging
 import os
 from tqdm import tqdm
-from typing import Union
 
 logger = logging.getLogger(__name__)
 
-# Custom eviction algorithms (not from libcachesim)
-CUSTOM_ALGORITHMS = {"momentum_decay"}
-
-# libcachesim-based eviction algorithms
-LCS_ALGORITHMS = {
+# All eviction algorithms (both libcachesim and custom ones inherit from CacheBase)
+EVICTION_ALGORITHMS = {
     "lru": lcs.LRU,
     "fifo": lcs.FIFO,
     "lfu": lcs.LFU,
@@ -25,6 +21,7 @@ LCS_ALGORITHMS = {
     "twoq": lcs.TwoQ,
     "slru": lcs.SLRU,
     "random": lcs.Random,
+    "momentum_decay": MomentumDecayCache,
 }
 
 
@@ -42,35 +39,26 @@ def setup_logging():
     )
 
 
-def is_custom_algorithm(algorithm: str) -> bool:
-    return algorithm.lower() in CUSTOM_ALGORITHMS
-
-
-def setup_cache(config: SimConfig) -> Union[lcs.CacheBase, MomentumDecayCache]:
+def setup_cache(config: SimConfig) -> lcs.CacheBase:
+    """
+    Create a cache instance based on the configuration.
+    
+    All cache algorithms (including MomentumDecayCache) inherit from CacheBase,
+    ensuring a fair comparison through the same process_trace interface.
+    """
     algorithm = config.eviction_algorithm.lower()
     cache_size_bytes = int(config.cache_size * 1024 * 1024 * 1024)
     
-    if algorithm == "momentum_decay":
-        cache = MomentumDecayCache(cache_size=cache_size_bytes, beta=0.9)
-        logger.info(f"Using cache eviction algorithm: momentum_decay (beta=0.9)")
-        return cache
-    
-    cache_class = LCS_ALGORITHMS.get(algorithm)
+    cache_class = EVICTION_ALGORITHMS.get(algorithm)
     if cache_class is None:
         raise ValueError(
             f"Unknown cache eviction algorithm: {config.eviction_algorithm}. "
-            f"Available: {list(LCS_ALGORITHMS.keys()) + list(CUSTOM_ALGORITHMS)}"
+            f"Available: {list(EVICTION_ALGORITHMS.keys())}"
         )
+    
     cache = cache_class(cache_size=cache_size_bytes)
-    logger.info(f"Using cache eviction algorithm: {config.eviction_algorithm}")
+    logger.info(f"Using cache eviction algorithm: {cache.cache_name}")
     return cache
-
-
-def process_trace_with_momentum(cache: MomentumDecayCache, reader: MobaTraceReader):
-    """Process trace using MomentumDecayCache with score information."""
-    for obj_id, obj_size, score in reader.generate_requests_with_scores():
-        cache.access(obj_id, obj_size, score)
-    return cache.get_miss_ratio()
 
 
 def get_num_traces(config: SimConfig) -> int:
@@ -89,7 +77,6 @@ def main():
     num_traces = get_num_traces(config)
     total_req_miss_ratio = 0
     total_bytes_miss_ratio = 0
-    use_custom = is_custom_algorithm(config.eviction_algorithm)
     
     for i in tqdm(range(num_traces), desc="Simulating traces"):
         trace_dir = os.path.join(config.trace_dir, f"trace{i:04d}")
@@ -97,10 +84,8 @@ def main():
         reader = MobaTraceReader(trace_dir=trace_dir, verbose=config.verbose)
         cache = setup_cache(config)
         
-        if use_custom:
-            req_miss_ratio, bytes_miss_ratio = process_trace_with_momentum(cache, reader)
-        else:
-            req_miss_ratio, bytes_miss_ratio = cache.process_trace(reader)
+        # All caches use the same process_trace interface for fair comparison
+        req_miss_ratio, bytes_miss_ratio = cache.process_trace(reader)
         
         total_req_miss_ratio += req_miss_ratio
         total_bytes_miss_ratio += bytes_miss_ratio
