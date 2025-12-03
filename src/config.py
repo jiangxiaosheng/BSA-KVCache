@@ -75,6 +75,23 @@ class SimConfig:
             else:
                 raise ValueError(f"Unknown config key: {key}")
 
+    def apply_overrides(self, overrides: list[str]):
+        """
+        Apply CLI overrides in "key=value" form.
+        
+        Values are parsed via yaml.safe_load so booleans/ints are handled naturally.
+        """
+        for override in overrides:
+            if "=" not in override:
+                raise ValueError(
+                    f"Invalid override '{override}'. Use the form key=value."
+                )
+            key, raw_value = override.split("=", 1)
+            if not hasattr(self, key):
+                raise ValueError(f"Unknown config key in override: {key}")
+            value = yaml.safe_load(raw_value)
+            setattr(self, key, value)
+
 
 _global_config: SimConfig = SimConfig()
 
