@@ -78,9 +78,6 @@ class MobaTraceReader(ReaderProtocol):
             score_trace = np.load(self.trace_files[i]["scores"])
             self.traces[i] = (block_trace, score_trace)
 
-    def _get_last_block_id(self) -> int:
-        return (self.config.context_length - 1) // self.config.block_size
-
     def _softmax(self, x: np.ndarray, axis: int = 0) -> np.ndarray:
         """Compute softmax along the specified axis."""
         x_max = np.max(x, axis=axis, keepdims=True)
@@ -98,8 +95,6 @@ class MobaTraceReader(ReaderProtocol):
                 block_ids = self.traces[cur_layer][0][:, :, cur_iter]
 
                 block_ids = block_ids.flatten().tolist()
-                # add the last block id as it's always selected
-                block_ids.append(self._get_last_block_id())
                 block_ids = set(block_ids)
 
                 # yield all pages for the current layer
@@ -140,7 +135,6 @@ class MobaTraceReader(ReaderProtocol):
                     cur_kvhead_block_ids = block_ids[:, start_col:end_col]
 
                     cur_kvhead_block_ids = cur_kvhead_block_ids.flatten().tolist()
-                    cur_kvhead_block_ids.append(self._get_last_block_id())
                     cur_kvhead_block_ids = set(cur_kvhead_block_ids)
                     for block_id in cur_kvhead_block_ids:
                         block = BsaKVCache(self.seq_id, block_id, cur_layer, kvhead_id)
@@ -178,11 +172,7 @@ class MobaTraceReader(ReaderProtocol):
                             block_score_map[bid] = score
                         else:
                             block_score_map[bid] = max(block_score_map[bid], score)
-                
-                # Add last block with a high score (always selected)
-                last_block = self._get_last_block_id()
-                block_score_map[last_block] = block_score_map.get(last_block, 1.0)
-                
+
                 # Yield all pages for each block
                 for block_id, block_score in block_score_map.items():
                     start_token_pos = block_id * self.config.block_size
@@ -231,10 +221,6 @@ class MobaTraceReader(ReaderProtocol):
                                 block_score_map[bid] = score
                             else:
                                 block_score_map[bid] = max(block_score_map[bid], score)
-                    
-                    # Add last block with high score
-                    last_block = self._get_last_block_id()
-                    block_score_map[last_block] = block_score_map.get(last_block, 1.0)
 
                     for block_id, score in block_score_map.items():
                         block = BsaKVCache(self.seq_id, block_id, cur_layer, kvhead_id)

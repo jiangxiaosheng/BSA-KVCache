@@ -1,303 +1,303 @@
-[00:44:07] INFO simulator.py:82: Simulation config: SimConfig(trace_dir='traces/moba-512-3/beyond-4096', hidden_size=1024, num_layers=28, num_heads=16, kv_group_size=2, block_size=512, context_length=4096, top_k=3, page_size=32, store_all_kvheads=True, dtype_bytes=2, cache_size=2.0, eviction_algorithm='s3fifo', batch_size=1, continuous_batching=False, verbose=False)
+[18:48:17] INFO simulator.py:82: Simulation config: SimConfig(trace_dir='traces/moba-512-3/beyond-4096', hidden_size=1024, num_layers=28, num_heads=16, kv_group_size=2, block_size=512, context_length=4096, top_k=3, page_size=32, store_all_kvheads=True, dtype_bytes=2, cache_size=2.0, eviction_algorithm='s3fifo', batch_size=1, continuous_batching=False, verbose=False)
 Processing trace traces/moba-512-3/beyond-4096/trace0000
-[00:44:07] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:09] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:17] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:18] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0001
-[00:44:09] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:12] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:18] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:22] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0002
-[00:44:12] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:16] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:22] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:25] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0003
-[00:44:16] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:19] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:25] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:28] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0004
-[00:44:19] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:19] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:28] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:28] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0005
-[00:44:19] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:23] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:28] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:32] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0006
-[00:44:23] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:26] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:32] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:35] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0007
-[00:44:26] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:30] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:35] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:38] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0008
-[00:44:30] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:33] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:38] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:42] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0009
-[00:44:33] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:36] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:42] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:45] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0010
-[00:44:36] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:40] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:45] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:48] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0011
-[00:44:40] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:40] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:48] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:49] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0012
-[00:44:40] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:44] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:49] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:52] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0013
-[00:44:44] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:48] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:52] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:55] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0014
-[00:44:48] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:51] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:55] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:48:58] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0015
-[00:44:51] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:54] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:48:58] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:02] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0016
-[00:44:54] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:44:58] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:02] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:05] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0017
-[00:44:58] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:01] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:05] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:08] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0018
-[00:45:01] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:05] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:08] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:11] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0019
-[00:45:05] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:08] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:11] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:15] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0020
-[00:45:08] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:11] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:15] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:18] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0021
-[00:45:11] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:15] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:18] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:21] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0022
-[00:45:15] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:18] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:21] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:24] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0023
-[00:45:18] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:22] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:24] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:27] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0024
-[00:45:22] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:25] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:27] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:31] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0025
-[00:45:25] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:28] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:31] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:34] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0026
-[00:45:28] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:32] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:34] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:37] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0027
-[00:45:32] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:35] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:37] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:40] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0028
-[00:45:35] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:38] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:40] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:43] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0029
-[00:45:38] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:42] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:43] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:47] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0030
-[00:45:42] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:45] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:47] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:50] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0031
-[00:45:45] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:48] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:50] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:53] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0032
-[00:45:48] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:49] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:53] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:54] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0033
-[00:45:49] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:53] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:54] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:49:57] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0034
-[00:45:53] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:56] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:49:57] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:00] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0035
-[00:45:56] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:45:59] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:00] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:03] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0036
-[00:45:59] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:03] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:03] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:07] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0037
-[00:46:03] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:06] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:07] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:10] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0038
-[00:46:06] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:10] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:10] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:13] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0039
-[00:46:10] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:13] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:13] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:17] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0040
-[00:46:13] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:16] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:17] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:20] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0041
-[00:46:16] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:20] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:20] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:23] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0042
-[00:46:20] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:23] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:23] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:27] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0043
-[00:46:23] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:25] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:27] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:29] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0044
-[00:46:25] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:28] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:29] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:32] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0045
-[00:46:28] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:29] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:32] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:33] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0046
-[00:46:30] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:33] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:33] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:36] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0047
-[00:46:33] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:36] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:36] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:39] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0048
-[00:46:36] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:40] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:40] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:43] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0049
-[00:46:40] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:43] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:43] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:46] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0050
-[00:46:43] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:43] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:46] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:46] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0051
-[00:46:43] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:47] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:46] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:49] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0052
-[00:46:47] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:50] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:49] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:52] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0053
-[00:46:50] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:53] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:52] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:56] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0054
-[00:46:53] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:46:57] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:56] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:50:59] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0055
-[00:46:57] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:00] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:50:59] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:02] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0056
-[00:47:00] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:04] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:02] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:05] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0057
-[00:47:04] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:07] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:05] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:08] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0058
-[00:47:07] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:10] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:08] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:12] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0059
-[00:47:10] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:12] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:12] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:13] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0060
-[00:47:12] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:15] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:13] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:16] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0061
-[00:47:15] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:18] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:16] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:19] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0062
-[00:47:18] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:22] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:19] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:22] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0063
-[00:47:22] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:25] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:22] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:26] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0064
-[00:47:25] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:28] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:26] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:29] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0065
-[00:47:28] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:32] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:29] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:32] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0066
-[00:47:32] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:35] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:32] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:35] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0067
-[00:47:35] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:39] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:35] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:38] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0068
-[00:47:39] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:42] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:38] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:41] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0069
-[00:47:42] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:45] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:41] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:45] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0070
-[00:47:45] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:47] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:45] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:46] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0071
-[00:47:47] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:50] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:46] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:49] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0072
-[00:47:50] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:50] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:49] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:49] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0073
-[00:47:50] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:54] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:49] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:53] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0074
-[00:47:54] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:57] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:53] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:56] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0075
-[00:47:57] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:47:59] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:56] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:51:58] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0076
-[00:47:59] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:02] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:51:58] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:01] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0077
-[00:48:02] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:06] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:01] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:04] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0078
-[00:48:06] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:09] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:04] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:07] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0079
-[00:48:09] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:12] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:07] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:11] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0080
-[00:48:12] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:16] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:11] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:14] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0081
-[00:48:16] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:19] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:14] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:17] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0082
-[00:48:19] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:22] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:17] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:20] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0083
-[00:48:22] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:26] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:20] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:23] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0084
-[00:48:26] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:29] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:23] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:26] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0085
-[00:48:29] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:32] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:26] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:29] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0086
-[00:48:32] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:36] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:29] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:33] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0087
-[00:48:36] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:39] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:33] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:36] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0088
-[00:48:39] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:42] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:36] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:39] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0089
-[00:48:43] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:46] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:39] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:42] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0090
-[00:48:46] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:49] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:42] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:45] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0091
-[00:48:49] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:52] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:45] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:48] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0092
-[00:48:52] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:54] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:48] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:50] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0093
-[00:48:54] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:48:58] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:50] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:54] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0094
-[00:48:58] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:49:01] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:54] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:52:57] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0095
-[00:49:01] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:49:05] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:52:57] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:53:00] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0096
-[00:49:05] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:49:08] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:53:00] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:53:03] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0097
-[00:49:08] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:49:11] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:53:03] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:53:06] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0098
-[00:49:11] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:49:15] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:53:06] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:53:09] INFO simulator.py:99: Cache occupied 2147483648 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0099
-[00:49:15] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
-[00:49:18] INFO simulator.py:99: Cache occupied 2147483648 bytes
-[00:49:18] INFO simulator.py:101: Average request miss ratio: 0.8601201469052624
-[00:49:18] INFO simulator.py:102: Average bytes miss ratio: 0.8601201469052624
+[18:53:09] INFO simulator.py:66: Using cache eviction algorithm: S3FIFO-0.1000-2
+[18:53:13] INFO simulator.py:99: Cache occupied 2147483648 bytes
+[18:53:13] INFO simulator.py:101: Average request miss ratio: 0.8584476212262168
+[18:53:13] INFO simulator.py:102: Average bytes miss ratio: 0.8584476212262168
