@@ -84,7 +84,13 @@ def collect_data(log_dir: pathlib.Path) -> Dict[str, List[Tuple[float, float]]]:
     return data
 
 
-def plot(data: Dict[str, List[Tuple[float, float]]], output_path: pathlib.Path) -> None:
+def plot(data: Dict[str, List[Tuple[float, float]]], output_path: pathlib.Path, exclude: set = None) -> None:
+    if exclude is None:
+        exclude = set()
+    
+    # Filter out excluded algorithms
+    data = {k: v for k, v in data.items() if k not in exclude}
+    
     if not data:
         raise SystemExit("No valid log files found to plot.")
 
@@ -93,7 +99,8 @@ def plot(data: Dict[str, List[Tuple[float, float]]], output_path: pathlib.Path) 
     fig.patch.set_facecolor("#ffffff")
     ax.set_facecolor("#ffffff")
 
-    algos = sorted(data.keys())
+    # Sort algorithms, but put LIRS last so colors stay consistent when it's excluded
+    algos = sorted(data.keys(), key=lambda x: (x == "lirs", x))
     
     # Distinct, high-contrast colors that are easy to distinguish
     distinct_colors = [
@@ -164,7 +171,14 @@ def main() -> None:
         print(f"{algo}:")
         for cache_size, hit_rate in values:
             print(f"  cache_size={cache_size:>4.1f} GB -> hit_rate={hit_rate:.4f}")
-    plot(data, args.output)
+    
+    # Generate overall plot with all algorithms
+    overall_path = args.output.with_name(args.output.stem + "_overall.png")
+    plot(data, overall_path)
+    
+    # Generate focused plot without LIRS
+    focused_path = args.output.with_name(args.output.stem + "_focused.png")
+    plot(data, focused_path, exclude={"lirs"})
 
 
 if __name__ == "__main__":
