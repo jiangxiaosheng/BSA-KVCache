@@ -1,0 +1,303 @@
+[20:10:44] INFO simulator.py:82: Simulation config: SimConfig(trace_dir='traces/moba-512-3/beyond-4096', hidden_size=1024, num_layers=28, num_heads=16, kv_group_size=2, block_size=512, context_length=4096, top_k=3, page_size=32, store_all_kvheads=True, dtype_bytes=2, cache_size=1.0, eviction_algorithm='lirs', batch_size=1, continuous_batching=False, verbose=False)
+Processing trace traces/moba-512-3/beyond-4096/trace0000
+[20:10:44] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:10:46] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0001
+[20:10:46] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:10:49] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0002
+[20:10:49] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:10:53] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0003
+[20:10:53] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:10:56] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0004
+[20:10:56] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:10:56] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0005
+[20:10:56] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:00] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0006
+[20:11:00] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:03] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0007
+[20:11:03] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:06] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0008
+[20:11:06] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:10] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0009
+[20:11:10] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:13] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0010
+[20:11:13] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:16] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0011
+[20:11:16] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:17] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0012
+[20:11:17] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:20] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0013
+[20:11:20] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:24] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0014
+[20:11:24] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:27] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0015
+[20:11:27] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:30] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0016
+[20:11:30] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:34] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0017
+[20:11:34] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:37] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0018
+[20:11:37] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:40] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0019
+[20:11:40] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:44] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0020
+[20:11:44] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:47] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0021
+[20:11:47] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:50] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0022
+[20:11:50] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:53] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0023
+[20:11:53] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:11:57] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0024
+[20:11:57] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:00] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0025
+[20:12:00] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:03] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0026
+[20:12:03] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:07] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0027
+[20:12:07] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:10] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0028
+[20:12:10] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:13] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0029
+[20:12:13] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:17] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0030
+[20:12:17] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:20] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0031
+[20:12:20] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:23] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0032
+[20:12:23] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:24] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0033
+[20:12:24] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:27] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0034
+[20:12:27] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:31] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0035
+[20:12:31] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:34] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0036
+[20:12:34] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:37] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0037
+[20:12:37] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:41] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0038
+[20:12:41] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:44] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0039
+[20:12:44] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:47] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0040
+[20:12:47] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:51] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0041
+[20:12:51] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:54] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0042
+[20:12:54] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:57] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0043
+[20:12:57] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:12:59] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0044
+[20:12:59] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:02] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0045
+[20:13:02] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:03] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0046
+[20:13:04] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:07] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0047
+[20:13:07] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:10] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0048
+[20:13:10] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:14] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0049
+[20:13:14] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:17] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0050
+[20:13:17] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:17] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0051
+[20:13:17] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:20] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0052
+[20:13:20] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:24] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0053
+[20:13:24] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:27] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0054
+[20:13:27] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:30] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0055
+[20:13:30] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:33] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0056
+[20:13:33] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:37] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0057
+[20:13:37] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:40] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0058
+[20:13:40] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:43] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0059
+[20:13:43] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:45] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0060
+[20:13:45] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:48] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0061
+[20:13:48] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:51] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0062
+[20:13:51] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:55] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0063
+[20:13:55] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:13:58] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0064
+[20:13:58] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:01] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0065
+[20:14:01] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:04] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0066
+[20:14:04] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:08] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0067
+[20:14:08] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:11] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0068
+[20:14:11] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:14] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0069
+[20:14:14] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:18] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0070
+[20:14:18] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:19] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0071
+[20:14:19] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:22] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0072
+[20:14:22] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:22] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0073
+[20:14:23] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:26] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0074
+[20:14:26] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:29] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0075
+[20:14:29] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:31] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0076
+[20:14:31] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:34] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0077
+[20:14:34] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:38] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0078
+[20:14:38] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:41] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0079
+[20:14:41] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:44] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0080
+[20:14:44] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:48] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0081
+[20:14:48] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:51] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0082
+[20:14:51] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:54] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0083
+[20:14:54] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:14:57] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0084
+[20:14:57] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:00] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0085
+[20:15:00] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:04] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0086
+[20:15:04] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:07] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0087
+[20:15:07] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:10] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0088
+[20:15:10] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:14] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0089
+[20:15:14] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:17] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0090
+[20:15:17] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:20] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0091
+[20:15:20] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:24] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0092
+[20:15:24] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:25] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0093
+[20:15:25] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:29] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0094
+[20:15:29] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:32] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0095
+[20:15:32] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:35] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0096
+[20:15:35] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:39] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0097
+[20:15:39] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:42] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0098
+[20:15:42] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:45] INFO simulator.py:99: Cache occupied 1072693248 bytes
+Processing trace traces/moba-512-3/beyond-4096/trace0099
+[20:15:45] INFO simulator.py:66: Using cache eviction algorithm: LIRS
+[20:15:49] INFO simulator.py:99: Cache occupied 1072693248 bytes
+[20:15:49] INFO simulator.py:101: Average request miss ratio: 0.7069438467810619
+[20:15:49] INFO simulator.py:102: Average bytes miss ratio: 0.7069438467810619
