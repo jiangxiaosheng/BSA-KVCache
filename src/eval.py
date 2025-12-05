@@ -69,6 +69,9 @@ def preload_traces(trace_files: dict, config: SimConfig):
     return traces
 
 
+def get_last_block_id(config: SimConfig) -> int:
+    return (config.context_length - 1) // config.block_size + 1
+
 def get_num_traces(config: SimConfig) -> int:
     return len(os.listdir(config.trace_dir))
 
@@ -109,6 +112,7 @@ def eval_avg_mem_usage(config_path: str, out_path: str):
                     cur_kvhead_block_ids = block_ids[:, start_col:end_col]
 
                     cur_kvhead_block_ids = cur_kvhead_block_ids.flatten().tolist()
+                    cur_kvhead_block_ids.append(get_last_block_id(config))
                     cur_kvhead_block_ids = set(cur_kvhead_block_ids)
                     mem_usage_per_iter += len(cur_kvhead_block_ids) * BsaKVCache.bytes() / 1024 / 1024 / 1024
             mem_usage += mem_usage_per_iter

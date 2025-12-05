@@ -94,20 +94,39 @@ def plot(data: Dict[str, List[Tuple[float, float]]], output_path: pathlib.Path) 
     ax.set_facecolor("#ffffff")
 
     algos = sorted(data.keys())
-    colors = plt.cm.viridis(np.linspace(0.15, 0.95, len(algos)))
+    
+    # Distinct, high-contrast colors that are easy to distinguish
+    distinct_colors = [
+        "#e6194b",  # red
+        "#3cb44b",  # green
+        "#4363d8",  # blue
+        "#f58231",  # orange
+        "#911eb4",  # purple
+        "#42d4f4",  # cyan
+        "#f032e6",  # magenta
+        "#000000",  # black
+        "#9a6324",  # brown
+        "#808000",  # olive
+    ]
+    # Different markers for each algorithm
+    markers = ["o", "s", "^", "D", "v", "p", "h", "X", "*", "P"]
+    
+    colors = distinct_colors[:len(algos)]
 
-    for color, algo in zip(colors, algos):
+    for i, algo in enumerate(algos):
         cache_sizes, hit_rates = zip(*data[algo])
         ax.plot(
             cache_sizes,
             hit_rates,
             label=algo.replace("_", " ").upper(),
-            color=color,
+            color=colors[i],
             linewidth=2.5,
-            marker="o",
-            markersize=7,
-            markerfacecolor="#ffffff",
-            markeredgewidth=1.2,
+            linestyle="-",
+            marker=markers[i % len(markers)],
+            markersize=8,
+            markerfacecolor=colors[i],
+            markeredgecolor="#ffffff",
+            markeredgewidth=1.5,
         )
 
     ax.set_title("Hit Rate vs. Cache Size", fontsize=16, color="#111827", pad=15)

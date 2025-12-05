@@ -1,303 +1,303 @@
-[18:48:36] INFO simulator.py:82: Simulation config: SimConfig(trace_dir='traces/moba-512-3/beyond-4096', hidden_size=1024, num_layers=28, num_heads=16, kv_group_size=2, block_size=512, context_length=4096, top_k=3, page_size=32, store_all_kvheads=True, dtype_bytes=2, cache_size=1.5, eviction_algorithm='momentum_decay', batch_size=1, continuous_batching=False, verbose=False)
+[20:40:20] INFO simulator.py:82: Simulation config: SimConfig(trace_dir='traces/moba-512-3/beyond-4096', hidden_size=1024, num_layers=28, num_heads=16, kv_group_size=2, block_size=512, context_length=4096, top_k=3, page_size=32, store_all_kvheads=True, dtype_bytes=2, cache_size=1.5, eviction_algorithm='momentum_decay', batch_size=1, continuous_batching=False, verbose=False)
 Processing trace traces/moba-512-3/beyond-4096/trace0000
-[18:48:36] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:48:38] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:40:20] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:40:23] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0001
-[18:48:38] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:48:42] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:40:23] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:40:27] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0002
-[18:48:42] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:48:46] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:40:27] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:40:32] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0003
-[18:48:46] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:48:50] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:40:32] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:40:36] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0004
-[18:48:50] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:48:50] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:40:36] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:40:37] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0005
-[18:48:50] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:48:55] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:40:37] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:40:42] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0006
-[18:48:55] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:48:59] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:40:42] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:40:46] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0007
-[18:48:59] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:03] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:40:46] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:40:51] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0008
-[18:49:03] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:07] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:40:51] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:40:56] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0009
-[18:49:07] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:11] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:40:56] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:00] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0010
-[18:49:11] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:15] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:00] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:05] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0011
-[18:49:15] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:16] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:05] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:06] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0012
-[18:49:16] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:20] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:06] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:10] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0013
-[18:49:20] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:24] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:10] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:15] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0014
-[18:49:24] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:28] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:15] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:20] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0015
-[18:49:28] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:32] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:20] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:24] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0016
-[18:49:32] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:36] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:24] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:29] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0017
-[18:49:36] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:40] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:29] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:34] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0018
-[18:49:40] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:44] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:34] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:38] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0019
-[18:49:44] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:49] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:38] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:43] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0020
-[18:49:49] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:52] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:43] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:47] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0021
-[18:49:52] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:49:57] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:48] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:52] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0022
-[18:49:57] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:01] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:52] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:41:57] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0023
-[18:50:01] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:05] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:41:57] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:01] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0024
-[18:50:05] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:09] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:01] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:06] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0025
-[18:50:09] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:13] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:06] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:10] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0026
-[18:50:13] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:17] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:10] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:15] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0027
-[18:50:17] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:21] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:15] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:20] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0028
-[18:50:21] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:25] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:20] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:25] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0029
-[18:50:25] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:29] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:25] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:29] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0030
-[18:50:29] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:33] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:29] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:34] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0031
-[18:50:33] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:37] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:34] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:38] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0032
-[18:50:37] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:39] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:38] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:40] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0033
-[18:50:39] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:43] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:40] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:44] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0034
-[18:50:43] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:47] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:44] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:49] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0035
-[18:50:47] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:51] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:49] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:54] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0036
-[18:50:51] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:55] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:54] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:42:58] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0037
-[18:50:55] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:50:59] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:42:58] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:03] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0038
-[18:50:59] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:03] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:03] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:07] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0039
-[18:51:03] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:07] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:08] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:12] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0040
-[18:51:07] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:11] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:12] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:17] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0041
-[18:51:11] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:16] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:17] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:22] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0042
-[18:51:16] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:20] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:22] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:26] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0043
-[18:51:20] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:22] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:26] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:29] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0044
-[18:51:22] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:26] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:29] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:33] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0045
-[18:51:26] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:27] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:33] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:35] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0046
-[18:51:27] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:31] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:35] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:39] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0047
-[18:51:31] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:36] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:39] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:44] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0048
-[18:51:36] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:40] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:44] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:49] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0049
-[18:51:40] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:44] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:49] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:53] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0050
-[18:51:44] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:44] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:53] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:54] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0051
-[18:51:44] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:48] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:54] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:43:58] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0052
-[18:51:48] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:52] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:43:58] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:03] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0053
-[18:51:52] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:51:56] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:03] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:07] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0054
-[18:51:56] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:00] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:07] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:12] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0055
-[18:52:00] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:04] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:12] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:17] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0056
-[18:52:04] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:08] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:17] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:21] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0057
-[18:52:08] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:12] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:21] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:26] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0058
-[18:52:12] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:16] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:26] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:30] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0059
-[18:52:16] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:18] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:31] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:32] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0060
-[18:52:18] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:22] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:32] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:37] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0061
-[18:52:22] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:26] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:37] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:41] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0062
-[18:52:26] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:30] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:41] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:46] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0063
-[18:52:30] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:34] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:46] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:50] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0064
-[18:52:34] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:38] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:50] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:44:55] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0065
-[18:52:38] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:42] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:44:55] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:00] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0066
-[18:52:42] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:46] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:00] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:04] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0067
-[18:52:46] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:51] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:04] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:09] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0068
-[18:52:51] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:55] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:09] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:13] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0069
-[18:52:55] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:52:59] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:13] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:18] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0070
-[18:52:59] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:00] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:18] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:20] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0071
-[18:53:00] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:04] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:20] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:24] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0072
-[18:53:04] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:05] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:24] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:24] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0073
-[18:53:05] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:09] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:24] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:29] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0074
-[18:53:09] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:13] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:29] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:33] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0075
-[18:53:13] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:15] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:34] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:36] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0076
-[18:53:15] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:19] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:36] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:41] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0077
-[18:53:19] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:23] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:41] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:45] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0078
-[18:53:23] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:27] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:45] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:50] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0079
-[18:53:27] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:31] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:50] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:54] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0080
-[18:53:31] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:35] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:54] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:45:59] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0081
-[18:53:35] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:39] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:45:59] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:03] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0082
-[18:53:39] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:43] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:03] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:08] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0083
-[18:53:43] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:47] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:08] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:12] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0084
-[18:53:47] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:51] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:12] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:16] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0085
-[18:53:51] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:55] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:17] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:21] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0086
-[18:53:55] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:53:59] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:21] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:26] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0087
-[18:53:59] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:03] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:26] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:30] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0088
-[18:54:03] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:07] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:30] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:35] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0089
-[18:54:07] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:12] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:35] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:39] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0090
-[18:54:12] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:16] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:39] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:44] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0091
-[18:54:16] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:20] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:44] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:48] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0092
-[18:54:20] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:22] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:48] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:51] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0093
-[18:54:22] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:26] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:51] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:46:55] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0094
-[18:54:26] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:30] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:46:55] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:47:00] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0095
-[18:54:30] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:34] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:47:00] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:47:04] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0096
-[18:54:34] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:38] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:47:04] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:47:09] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0097
-[18:54:38] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:42] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:47:09] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:47:13] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0098
-[18:54:42] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:46] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:47:13] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:47:18] INFO simulator.py:99: Cache occupied 1610612736 bytes
 Processing trace traces/moba-512-3/beyond-4096/trace0099
-[18:54:46] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
-[18:54:50] INFO simulator.py:99: Cache occupied 1610612736 bytes
-[18:54:50] INFO simulator.py:101: Average request miss ratio: 0.5761237542368638
-[18:54:50] INFO simulator.py:102: Average bytes miss ratio: 0.5761237542368638
+[20:47:18] INFO simulator.py:66: Using cache eviction algorithm: MomentumDecay(beta=0.9)
+[20:47:22] INFO simulator.py:99: Cache occupied 1610612736 bytes
+[20:47:22] INFO simulator.py:101: Average request miss ratio: 0.507478032795735
+[20:47:22] INFO simulator.py:102: Average bytes miss ratio: 0.507478032795735
